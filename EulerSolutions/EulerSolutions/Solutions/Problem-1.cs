@@ -4,8 +4,22 @@ using System.Text;
 
 namespace EulerSolutions.Solutions
 {
-	class Problem_1
+	public class Problem_1
 	{
-		//Console.WriteLine("Problem 1 Solution!");
+		public static int Solution ()
+		{
+			int maxNumber = 1000;
+			int sum = 0;
+
+			for (int i = 1; i < maxNumber; i++)
+			{
+				if (i % 3 == 0 || i % 5 == 0)
+				{
+					sum += i;
+				}
+			}
+
+			return sum;
+		}
 	}
 }
