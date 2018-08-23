@@ -8,7 +8,7 @@ namespace EulerSolutions
 	{
 		private static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			Console.WriteLine("Press Enter to begin!");
 			Console.ReadLine();
 
 			var stopwatch = new Stopwatch();
@@ -17,7 +17,8 @@ namespace EulerSolutions
 			Console.WriteLine("Solution: " + Problem_2.Solution());
 
 			stopwatch.Stop();
-			Console.WriteLine("Elapsed time: " + stopwatch.ElapsedMilliseconds);
+
+			Console.WriteLine("Elapsed time: {0} milliseconds", stopwatch.ElapsedMilliseconds.ToString());
 			Console.ReadLine();
 		}
 	}

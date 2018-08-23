@@ -15,10 +15,16 @@ namespace EulerSolutions.Solutions
 
 		private static int getFibonacciEvensSum(int maxNumber)
 		{
-			int sum = 0, x = 1, y = 2;
+			int sum = 2, x = 1, y = 2;
 			while (y < maxNumber)
 			{
+				int tempSum = x + y;
 
+				if (tempSum % 2 == 0)
+					sum += tempSum;
+
+				x = y;
+				y = tempSum;
 			}
 
 			return sum;
