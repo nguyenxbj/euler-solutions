@@ -15,15 +15,24 @@ namespace EulerSolutions.Solutions
 
 		public static long LargestPrime(long primeNum)
 		{
-
-
-
+			for (long i = primeNum; i > 1; i--)
+			{
+				if (primeNum % i == 0)
+				{
+					if (IsPrime(i))
+						return i;
+				}
+			}
+			
 			return 0;
 		}
 
+
 		public static Boolean IsPrime(long number)
 		{
-
+			if (number % 2 == 0)
+				return false;
+			// use recursion?
 			return true;
 		}
 	}
