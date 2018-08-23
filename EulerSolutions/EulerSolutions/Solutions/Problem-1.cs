@@ -6,7 +6,7 @@ namespace EulerSolutions.Solutions
 {
 	public class Problem_1
 	{
-		public static int Solution ()
+		public static int Solution()
 		{
 			int maxNumber = 1000;
 			int sum = 0;

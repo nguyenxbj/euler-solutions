@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using EulerSolutions.Solutions;
 
 namespace EulerSolutions
@@ -10,7 +11,13 @@ namespace EulerSolutions
 			Console.WriteLine("Hello World!");
 			Console.ReadLine();
 
-			Console.WriteLine(Problem_1.Solution());
+			var stopwatch = new Stopwatch();
+			stopwatch.Start();
+
+			Console.WriteLine("Solution: " + Problem_2.Solution());
+
+			stopwatch.Stop();
+			Console.WriteLine("Elapsed time: " + stopwatch.ElapsedMilliseconds);
 			Console.ReadLine();
 		}
 	}
