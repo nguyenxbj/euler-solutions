@@ -14,10 +14,11 @@ namespace EulerSolutions
 			var stopwatch = new Stopwatch();
 			stopwatch.Start();
 
-			Console.WriteLine("Solution: " + Problem_2.Solution());
+			Problem_3.Solution();
 
 			stopwatch.Stop();
 
+			Console.WriteLine();
 			Console.WriteLine("Elapsed time: {0} milliseconds", stopwatch.ElapsedMilliseconds.ToString());
 			Console.ReadLine();
 		}
