@@ -8,13 +8,13 @@ namespace EulerSolutions
 	{
 		private static void Main(string[] args)
 		{
-			Console.WriteLine("Press Enter to begin!");
+			Console.WriteLine("Welcome to BJ's Project Euler solutions. Press Enter to begin!");
 			Console.ReadLine();
 
 			var stopwatch = new Stopwatch();
 			stopwatch.Start();
 
-			Problem_3.Solution();
+			Problem_4.Solution();
 
 			stopwatch.Stop();
 
