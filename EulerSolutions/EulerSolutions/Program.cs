@@ -14,7 +14,7 @@ namespace EulerSolutions
 			var stopwatch = new Stopwatch();
 			stopwatch.Start();
 
-			Problem_4.Solution();
+			Console.WriteLine(Problem.Solution());
 
 			stopwatch.Stop();
 

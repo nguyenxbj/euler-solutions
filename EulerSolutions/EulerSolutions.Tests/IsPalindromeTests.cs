@@ -4,7 +4,7 @@ using EulerSolutions.Helpers;
 
 namespace EulerSolutions.Tests
 {
-	public class ToolkitTests
+	public class IsPalindromeTests
 	{
 		[Fact]
 		public void IsPalindromeTestA()

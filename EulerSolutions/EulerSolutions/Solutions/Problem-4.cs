@@ -7,12 +7,23 @@
 		private static int _inputNum1 = 999;
 		private static int _inputNum2 = 999;
 
-		public static string Solution()
+		public static int Solution()
 		{
-			//Helpers.Toolkit.IsPalindrome
+			int largestPalindrome = 0;
 			
+			for (int i = _inputNum1; i >= 0; i--)
+			{
+				for (int j = _inputNum2; j >= 0; j--)
+				{
+					int product = i * j;
+					if (product > largestPalindrome && Helpers.Toolkit.IsPalindrome(product))
+					{
+						largestPalindrome = product;
+					}
+				}
+			}
 
-			return "Unsolved.";
+			return largestPalindrome;
 		}
 	}
 }

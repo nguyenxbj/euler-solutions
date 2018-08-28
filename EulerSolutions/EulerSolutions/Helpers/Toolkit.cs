@@ -36,5 +36,22 @@ namespace EulerSolutions.Helpers
 		{
 			return false;
 		}
+
+		/// <summary>
+		/// Returns whether number can be evenly divided by all numbers in the giving array
+		/// </summary>
+		/// <param name="number"></param>
+		/// <param name="numbers"></param>
+		/// <returns></returns>
+		public static bool IsDivisibleBy(int number, int[] numbers)
+		{
+			foreach(int divisor in numbers)
+			{
+				if (number % divisor != 0)
+					return false;
+			}
+
+			return true;
+		}
 	}
 }
