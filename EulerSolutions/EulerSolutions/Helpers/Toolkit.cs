@@ -45,6 +45,9 @@ namespace EulerSolutions.Helpers
 		/// <returns></returns>
 		public static bool IsDivisibleBy(int number, int[] numbers)
 		{
+			if (number == 0)
+				return false;
+
 			foreach(int divisor in numbers)
 			{
 				if (number % divisor != 0)
