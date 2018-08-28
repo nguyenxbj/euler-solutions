@@ -34,6 +34,12 @@ namespace EulerSolutions.Helpers
 		/// <returns></returns>
 		public static bool IsPrime(int number)
 		{
+			if (number == 0)
+				return false;
+			else if (number == 1)
+				return true;
+			
+			// TODO
 			return false;
 		}
 
@@ -55,6 +61,11 @@ namespace EulerSolutions.Helpers
 			}
 
 			return true;
+		}
+
+		public static long NthPrime(long n)
+		{
+			return 0;
 		}
 	}
 }

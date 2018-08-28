@@ -1,7 +1,7 @@
 ﻿namespace EulerSolutions.Solutions
 {
 	/// <summary>
-	/// A Template for new problems
+	/// 10001st prime
 	/// </summary>
 	public class Problem_7
 	{
