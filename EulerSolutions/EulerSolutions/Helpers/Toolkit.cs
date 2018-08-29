@@ -79,10 +79,5 @@ namespace EulerSolutions.Helpers
 
 			return true;
 		}
-
-		public static long NthPrime(long n)
-		{
-			return 0;
-		}
 	}
 }
