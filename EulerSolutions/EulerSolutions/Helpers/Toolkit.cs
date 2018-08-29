@@ -79,5 +79,26 @@ namespace EulerSolutions.Helpers
 
 			return true;
 		}
+
+		/// <summary>
+		/// Returns a list of all prime numbers up to the input value
+		/// </summary>
+		/// <param name="maxNumber"></param>
+		/// <returns></returns>
+		public static List<int> GetAllPrimes(long maxNumber)
+		{
+			List<int> primes = new List<int>();
+		
+			int number = 2;
+			while (number <= maxNumber)
+			{
+				if (IsPrime(number))
+					primes.Add(number);
+
+				number++;
+			}
+
+			return primes;
+		}
 	}
 }

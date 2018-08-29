@@ -7,7 +7,15 @@
 	{
 		public static string Solution()
 		{
-			return "Unsolved.";
+			var primes = Helpers.Toolkit.GetAllPrimes(2000000);
+			long sum = 0;
+
+			foreach(long number in primes)
+			{
+				sum += number;
+			}
+
+			return sum.ToString();
 		}
 	}
 }
