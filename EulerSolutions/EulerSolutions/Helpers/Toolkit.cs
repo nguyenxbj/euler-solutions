@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace EulerSolutions.Helpers
 {
@@ -61,7 +59,7 @@ namespace EulerSolutions.Helpers
 		}
 
 		/// <summary>
-		/// Returns whether number can be evenly divided by all numbers in the giving array
+		/// Returns whether the given number can be evenly divided by all numbers in the given array
 		/// </summary>
 		/// <param name="number"></param>
 		/// <param name="numbers"></param>
@@ -81,7 +79,7 @@ namespace EulerSolutions.Helpers
 		}
 
 		/// <summary>
-		/// Returns a list of all prime numbers up to the input value
+		/// Returns a list of all prime numbers up to the given number
 		/// </summary>
 		/// <param name="maxNumber"></param>
 		/// <returns></returns>
@@ -99,6 +97,24 @@ namespace EulerSolutions.Helpers
 			}
 
 			return primes;
+		}
+
+		/// <summary>
+		/// Returns a list of all factors of the given number
+		/// </summary>
+		/// <param name="number"></param>
+		/// <returns></returns>
+		public static List<int> GetFactors(long number)
+		{
+			List<int> list = new List<int>();
+
+			for (int i = 1; i <= number; i++)
+			{
+				if (number % i == 0)
+					list.Add(i);
+			}
+
+			return list;
 		}
 	}
 }

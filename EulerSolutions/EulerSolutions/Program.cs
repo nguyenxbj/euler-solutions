@@ -26,7 +26,7 @@ namespace EulerSolutions
 				}
 			} while (!response);
 
-			Console.WriteLine(String.Format("Running the solution for problem {0}", problemId));
+			Console.WriteLine(String.Format("Running the solution for problem {0}...", problemId));
 
 			var stopwatch = new Stopwatch();
 			stopwatch.Start();
