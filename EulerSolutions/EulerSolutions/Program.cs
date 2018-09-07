@@ -9,8 +9,9 @@ namespace EulerSolutions
 	{
 		private static void Main(string[] args)
 		{
-			Console.WriteLine("Welcome to BJ's Project Euler solutions. Press Enter to begin!");
-			Console.WriteLine();
+			Console.WriteLine("Welcome to BJ's Project Euler solutions.");
+			Console.WriteLine("Press Enter to begin!");
+			Console.ReadLine();
 
 			int problemId;
 			bool response;
