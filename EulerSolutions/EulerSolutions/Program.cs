@@ -38,6 +38,7 @@ namespace EulerSolutions
 
 			Console.WriteLine();
 			Console.WriteLine("Elapsed time: {0} milliseconds", stopwatch.ElapsedMilliseconds.ToString());
+			Console.WriteLine("Press any key to end the program");
 			Console.ReadLine();
 		}
 
